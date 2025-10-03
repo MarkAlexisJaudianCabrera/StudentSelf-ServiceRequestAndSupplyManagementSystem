@@ -55,5 +55,10 @@ namespace StudentSelf_ServiceRequestAndSupplyManagementSystem.components.StudAlu
         {
 
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

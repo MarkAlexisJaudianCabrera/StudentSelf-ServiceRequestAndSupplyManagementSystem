@@ -70,6 +70,7 @@
             button2 = new Button();
             dataGridView1 = new DataGridView();
             label4 = new Label();
+            label19 = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
@@ -241,6 +242,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(label19);
             groupBox2.Controls.Add(textBox1);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(textBox2);
@@ -295,14 +297,14 @@
             // comboBox1
             // 
             comboBox1.Cursor = Cursors.Hand;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "N/A", "Jr.", "Sr.", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" });
+            comboBox1.Items.AddRange(new object[] { "‎ ", "Jr.", "Sr.", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" });
             comboBox1.Location = new Point(762, 28);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(89, 26);
             comboBox1.TabIndex = 8;
-            comboBox1.Text = "   Suffix";
             // 
             // label7
             // 
@@ -552,6 +554,18 @@
             label4.TabIndex = 0;
             label4.Text = "Summary and Confirmation";
             // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label19.ForeColor = SystemColors.ButtonFace;
+            label19.Location = new Point(782, 57);
+            label19.Name = "label19";
+            label19.Size = new Size(51, 18);
+            label19.TabIndex = 9;
+            label19.Text = "Suffix";
+            label19.Click += label19_Click;
+            // 
             // StudAlumniReqNewF
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -629,5 +643,6 @@
         private DataGridView dataGridView1;
         private Button button2;
         private Button button3;
+        private Label label19;
     }
 }

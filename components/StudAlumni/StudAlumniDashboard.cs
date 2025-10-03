@@ -22,7 +22,7 @@ namespace StudentSelf_ServiceRequestAndSupplyManagementSystem.components.StudAlu
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
-            DialogResult confirmation = MessageBox.Show("Are you sure you want to close this window?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult confirmation = MessageBox.Show("Request Form window will be closed", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (confirmation == DialogResult.No)
             {
@@ -62,6 +62,11 @@ namespace StudentSelf_ServiceRequestAndSupplyManagementSystem.components.StudAlu
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
